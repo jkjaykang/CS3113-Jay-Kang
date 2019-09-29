@@ -1,0 +1,35 @@
+﻿  Ball.cpp
+  Entity.cpp
+C:\Users\Jay\Desktop\SDLProject\Ball.cpp(20,87): warning C4305:  'initializing': truncation from 'double' to 'float'
+  main.cpp
+C:\Users\Jay\Desktop\SDLProject\Entity.cpp(19,88): warning C4305:  'initializing': truncation from 'double' to 'float'
+C:\Users\Jay\Desktop\SDLProject\main.cpp(152,39): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Jay\Desktop\SDLProject\main.cpp(152,39): warning C4244:         with
+C:\Users\Jay\Desktop\SDLProject\main.cpp(152,39): warning C4244:         [
+C:\Users\Jay\Desktop\SDLProject\main.cpp(152,39): warning C4244:             T=float
+C:\Users\Jay\Desktop\SDLProject\main.cpp(152,39): warning C4244:         ]
+C:\Users\Jay\Desktop\SDLProject\main.cpp(156,39): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Jay\Desktop\SDLProject\main.cpp(156,39): warning C4244:         with
+C:\Users\Jay\Desktop\SDLProject\main.cpp(156,39): warning C4244:         [
+C:\Users\Jay\Desktop\SDLProject\main.cpp(156,39): warning C4244:             T=float
+C:\Users\Jay\Desktop\SDLProject\main.cpp(156,39): warning C4244:         ]
+C:\Users\Jay\Desktop\SDLProject\main.cpp(171,38): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Jay\Desktop\SDLProject\main.cpp(171,38): warning C4244:         with
+C:\Users\Jay\Desktop\SDLProject\main.cpp(171,38): warning C4244:         [
+C:\Users\Jay\Desktop\SDLProject\main.cpp(171,38): warning C4244:             T=float
+C:\Users\Jay\Desktop\SDLProject\main.cpp(171,38): warning C4244:         ]
+C:\Users\Jay\Desktop\SDLProject\main.cpp(175,38): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Jay\Desktop\SDLProject\main.cpp(175,38): warning C4244:         with
+C:\Users\Jay\Desktop\SDLProject\main.cpp(175,38): warning C4244:         [
+C:\Users\Jay\Desktop\SDLProject\main.cpp(175,38): warning C4244:             T=float
+C:\Users\Jay\Desktop\SDLProject\main.cpp(175,38): warning C4244:         ]
+C:\Users\Jay\Desktop\SDLProject\main.cpp(187,113): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Jay\Desktop\SDLProject\main.cpp(188,113): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Jay\Desktop\SDLProject\main.cpp(189,104): warning C4305:  'argument': truncation from 'double' to 'float'
+  ShaderProgram.cpp
+  Wall.cpp
+C:\Users\Jay\Desktop\SDLProject\main.cpp(190,110): warning C4305:  'argument': truncation from 'double' to 'float'
+  Generating Code...
+C:\Users\Jay\Desktop\SDLProject\Wall.cpp(20,88): warning C4305:  'initializing': truncation from 'double' to 'float'
+  LINK : C:\Users\Jay\Desktop\SDLProject\Debug\SDLProject.exe not found or not built by the last incremental link; performing full link
+  SDLProject.vcxproj -> C:\Users\Jay\Desktop\SDLProject\Debug\SDLProject.exe
