@@ -53,4 +53,15 @@
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="bounce.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Game over.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="pong.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
 </Project>

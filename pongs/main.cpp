@@ -7,6 +7,7 @@
 #include <SDL.h>
 #include <SDL_opengl.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include "glm/mat4x4.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 #include "ShaderProgram.h"
@@ -33,12 +34,22 @@ Ball pong;
 Wall top;
 Wall bottom;
 
+Mix_Music* music;
+Mix_Chunk* bounce;
 
 void Initialize() {
-	SDL_Init(SDL_INIT_VIDEO);
+	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
 	displayWindow = SDL_CreateWindow("Test", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
 	SDL_GLContext context = SDL_GL_CreateContext(displayWindow);
 	SDL_GL_MakeCurrent(displayWindow, context);
+
+	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096);
+
+	music = Mix_LoadMUS("pong.mp3");
+	Mix_PlayMusic(music, -1);
+
+	bounce = Mix_LoadWAV("bounce.wav");
+
 
 #ifdef _WINDOWS
 	glewInit();
@@ -135,6 +146,7 @@ void checkCollidePaddle(float x1, float x2, float w1, float w2, float y1, float 
 
 	if (xdist < 0 && ydist < 0)
 	{
+		Mix_PlayChannel(-1, bounce, 0);
 		if (pong.movement.x > 0)
 		{
 			pong.movement.x = pong.movement.x - 2;
@@ -166,6 +178,7 @@ void checkCollideWall(float x1, float x2, float w1, float w2, float y1, float y2
 
 	if (xdist < 0 && ydist < 0)
 	{
+		Mix_PlayChannel(-1, bounce, 0);
 		if (pong.movement.y > 0)
 		{
 			pong.movement.y = pong.movement.y - 0.4;

@@ -143,6 +143,11 @@
     <Image Include="pizza.png" />
     <Image Include="turtle.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="bounce.wav" />
+    <Media Include="Game over.wav" />
+    <Media Include="pong.mp3" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

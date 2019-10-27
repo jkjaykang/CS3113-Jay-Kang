@@ -1,4 +1,1 @@
-﻿  main.cpp
-C:\Users\Jay\Desktop\Lunar Lander\main.cpp(205,120): warning C4305:  'argument': truncation from 'double' to 'float'
-C:\Users\Jay\Desktop\Lunar Lander\main.cpp(210,123): warning C4305:  'argument': truncation from 'double' to 'float'
-  SDLProject.vcxproj -> C:\Users\Jay\Desktop\Lunar Lander\Debug\SDLProject.exe
+﻿  SDLProject.vcxproj -> C:\Users\Jay\Desktop\CS3113-Jay-Kang\Lunar Lander\Debug\SDLProject.exe
